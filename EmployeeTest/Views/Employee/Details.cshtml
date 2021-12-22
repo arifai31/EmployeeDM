@@ -1,0 +1,76 @@
+﻿@model EmployeeTest.Entities.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.alamat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alamat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.join_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.join_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.status)*@
+            @Html.RadioButtonFor(model => model.status, true) Aktif
+            @Html.RadioButtonFor(model => model.status, false) Non Aktif
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.entry_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.entry_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.level)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.level)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

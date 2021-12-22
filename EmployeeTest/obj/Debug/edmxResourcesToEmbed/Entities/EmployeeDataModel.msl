@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="EmployeeEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="alamat" ColumnName="alamat" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="join_date" ColumnName="join_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="entry_date" ColumnName="entry_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MLevels">
+      <EntityTypeMapping TypeName="Model.MLevel">
+        <MappingFragment StoreEntitySet="MLevel">
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
